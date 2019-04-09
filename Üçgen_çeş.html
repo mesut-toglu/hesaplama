@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Mesut Tırampaoğlu</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/solid.js" integrity="sha384-IA6YnujJIO+z1m4NKyAGvZ9Wmxrd4Px8WFqhFcgRmwLaJaiwijYgApVpo1MV8p77" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.8.1/js/regular.js" integrity="sha384-Uc9toywOA44owltk1MWl0lQZ+L0mBzJkLQcdif6+JtG9izvok9DLJtCZX57Uq3k2" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.8.1/js/brands.js" integrity="sha384-rUOIFHM3HXni/WG5pzDhA1e2Js5nn4bWudTYujHbbI9ztBIxK54CL4ZNZWwcBQeD" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.8.1/js/fontawesome.js" integrity="sha384-EMmnH+Njn8umuoSMZ3Ae3bC9hDknHKOWL2e9WJD/cN6XLeAN7tr5ZQ0Hx5HDHtkS" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+
+<body>
+ 
+ 
+  <div class="container">
+    </P>
+    <div class="jumbotron text-center">
+            <h2>-- ÜÇGENİN ÇEŞİDNİ BULMA --</h2>
+            1. Kenarı Girin : <input type="text" id="kenar10" />
+            </p>
+            2.Kenarı Girin : <input type="text" id="kenar11" />
+            </p>
+            3. Kenarı Girin : <input type="text" id="kenar12" />
+            </P>
+            <button type="button" class="btn btn-primary btn-sm" id="asalHesapla12"><i class="fas fa-calculator"></i>  Hesapla</button>
+            <br />
+            <script language="javascript" type="text/javascript">
+              function asalHesapla12()
+               {
+                var sayi10 = document.getElementById("kenar10").value;
+                var sayi11 = document.getElementById("kenar11").value;
+                var sayi12 = document.getElementById("kenar12").value;
+                sayi10 = Number(sayi10);
+                sayi11 = Number(sayi11);
+                sayi12 = Number(sayi12);
+                if (sayi10 == sayi11 && sayi11 == sayi12 && sayi10 == sayi12) {
+                  alert("Bu bir EŞİTKENAR üçgendir .");
+                } else if (sayi10 != sayi11 && sayi11 != sayi12 && sayi10 != sayi12) {
+                  alert("Bu bir ÇEŞİTKENAR üçgendir .");
+                } else if (sayi10 == sayi11 != sayi12 || sayi11 == sayi12 != sayi10 || sayi10 == sayi12 != sayi11) {
+                  alert("Bu bir İKİZKENAR üçgendir .");
+                } else {
+                  alert("Girilen verirler üçgene aite degildir.");
+                }
+              }
+              var hesapBtn = document.getElementById("asalHesapla12");
+              hesapBtn.onclick = asalHesapla12;
+            </script>
+            <ul class="pagination justify-content-center">
+            <li class="page-item"><a class="page-link" href="index2.html"><i class="fas fa-home"></i> Anasayfa</a></li>
+        </ul>
+</body>
+
+</html

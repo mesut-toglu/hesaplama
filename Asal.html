@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Mesut Tırampaoğlu</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/solid.js" integrity="sha384-IA6YnujJIO+z1m4NKyAGvZ9Wmxrd4Px8WFqhFcgRmwLaJaiwijYgApVpo1MV8p77" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.8.1/js/regular.js" integrity="sha384-Uc9toywOA44owltk1MWl0lQZ+L0mBzJkLQcdif6+JtG9izvok9DLJtCZX57Uq3k2" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.8.1/js/brands.js" integrity="sha384-rUOIFHM3HXni/WG5pzDhA1e2Js5nn4bWudTYujHbbI9ztBIxK54CL4ZNZWwcBQeD" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.8.1/js/fontawesome.js" integrity="sha384-EMmnH+Njn8umuoSMZ3Ae3bC9hDknHKOWL2e9WJD/cN6XLeAN7tr5ZQ0Hx5HDHtkS" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+
+<body>
+ 
+ 
+  <div class="container">
+    </P>
+    <div class="jumbotron text-center">
+            <h3> Asal Sayı bulma</h3>
+            <input type="text" id="sayi1" placeholder="Bir Sayı Girin" />
+            <br />
+            </p>
+            <button type="button" class="btn btn-primary btn-sm" onclick="asalHesapla32()"><i class="fas fa-calculator"></i>  Hesapla</button>
+            <br />
+            <p id="demo"></p>
+            <script language="javascript" type="text/javascript">
+              var text = "";
+              var sayi = 0;
+  
+              function asalHesapla32() 
+              {
+                var sayac = 0;
+                sayi = document.getElementById('sayi1').value;
+                for (i = 2; i < sayi; i++) {
+                  if (sayi % i == 0) {
+                    sayac++;
+                  }
+                }
+                if (sayac == 0) {
+                  alert("Asal");
+                } else {
+                  alert("Asal değil. 1 ve Kendisi hariç " + sayac + "  adet böleni var");
+                }
+                document.getElementById('demo').innerHTML = text;
+              }
+            </script>
+            </p>
+ <ul class="pagination justify-content-center">
+        <li class="page-item"><a class="page-link" href="index2.html"><i class="fas fa-home"></i> Anasayfa</a></li>
+    </ul>
+          </div>
+          
+         
+        </div>
+</body>
+
+</html
